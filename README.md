@@ -2,7 +2,7 @@
 
 Code for my blog.
 
-Expanded from [Dinesh Pandiyan's Dev Landing Page](https://portfoliov1.dineshpandiyan.com)
+Expanded from [Dinesh Pandiyan's Dev Landing Page](https://github.com/flexdinesh/dev-landing-page)
 
 ## License
 
