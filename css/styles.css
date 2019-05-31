@@ -69,24 +69,3 @@ main > .tagline {
 	width: 2.65rem;
 	height: 2.65rem;
 }
-
-.button {
-    background-color: #320111;
-    border: inset;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-}
-
-.button:hover {
-	background-color: #5f021f;
-}
-
-.button:active {
-  background-color: #5f021f;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
