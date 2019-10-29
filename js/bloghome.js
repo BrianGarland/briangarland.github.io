@@ -20,9 +20,14 @@ function loadIssues(id) {
 
     outhtml += `<p>Here is a list of my blog posts.</p>`
 
+    outhtml += '<p>length:</p>' + data.length;
+    
     outhtml += '<ul>';
     
     for (var i = 0; i < data.length; i++) {
+    
+      outhtml += data[i].user.login;
+      
       if (data[i].user.login === "briangarland") {
         outhtml += 
         `<li><a href="ghpost.html?` + data[i].number + `">` + data[i].title +`</a>`
