@@ -18,7 +18,7 @@ function loadIssues(id) {
 
     var outhtml = '';
 
-    outhtml += `<p>Here is a list of my blog posts.</p>`
+    outhtml += `</ br>`
 
     outhtml += '<ul>';
     
