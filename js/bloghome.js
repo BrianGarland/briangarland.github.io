@@ -20,7 +20,7 @@ function loadIssues(id) {
 
     outhtml += `<p>Here is a list of my blog posts.</p>`
 
-    outhtml += '<p>length:</p>' + data.length;
+    outhtml += '<p>length:' + data.length + '</p>';
     
     outhtml += '<ul>';
     
