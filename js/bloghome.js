@@ -20,17 +20,13 @@ function loadIssues(id) {
 
     outhtml += `<p>Here is a list of my blog posts.</p>`
 
-    outhtml += '<p>length:' + data.length + '</p>';
-    
     outhtml += '<ul>';
     
     for (var i = 0; i < data.length; i++) {
     
-      outhtml += data[i].user.login;
-      
       if (data[i].user.login === "BrianGarland") {
         outhtml += 
-        `<li><a href="ghpost.html?` + data[i].number + `">` + data[i].title +`</a>`
+        `<li><a href="blogpost.html?` + data[i].number + `">` + data[i].title +`</a>`
 
         for (var y = 0; y < data[i].labels.length; y++) {
           outhtml += ` <span class="badge badge-secondary" style="background-color: #` + data[i].labels[y].color + `;">` + data[i].labels[y].name + `</span>`
