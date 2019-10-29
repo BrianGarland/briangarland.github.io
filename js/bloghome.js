@@ -28,7 +28,7 @@ function loadIssues(id) {
     
       outhtml += data[i].user.login;
       
-      if (data[i].user.login === "briangarland") {
+      if (data[i].user.login === "BrianGarland") {
         outhtml += 
         `<li><a href="ghpost.html?` + data[i].number + `">` + data[i].title +`</a>`
 
