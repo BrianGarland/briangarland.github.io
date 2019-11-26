@@ -1,6 +1,6 @@
 # briangarland.github.io
 
-Code for my blog.
+Code for my personal website.
 
 Expanded from [Dinesh Pandiyan's Dev Landing Page](https://github.com/flexdinesh/dev-landing-page)
 
