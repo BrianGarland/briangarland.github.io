@@ -2,8 +2,12 @@
 
 Code for my personal website.
 
-Expanded from [Dinesh Pandiyan's Dev Landing Page](https://github.com/flexdinesh/dev-landing-page)
+[Clean Blog from Start Bootstrap](https://github.com/StartBootstrap/startbootstrap-clean-blog)
+
+Images from [Unsplash](https://unsplash.com/)
+
+Uses github issues as blog posts.
 
 ## License
 
-MIT © Dinesh Pandiyan
+MIT License. See file `LICENSE` in root of this repository.

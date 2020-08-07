@@ -1,6 +1,4 @@
 
-var converter = new showdown.Converter();
-
 window.onload = function () { 
   var issueID = Number(location.search.substr(1));
 
@@ -17,27 +15,23 @@ function loadIssues(id) {
     var posts = document.getElementById("posts");
 
     var outhtml = '';
-
-    outhtml += `</ br>`
-
-    outhtml += '<ul>';
     
     for (var i = 0; i < data.length; i++) {
     
       if (data[i].user.login === "BrianGarland") {
-        outhtml += 
-        `<li><a href="blogpost.html?` + data[i].number + `">` + data[i].title +`</a>`
-
-        for (var y = 0; y < data[i].labels.length; y++) {
-          outhtml += ` <span class="badge badge-secondary" style="background-color: #` + data[i].labels[y].color + `;">` + data[i].labels[y].name + `</span>`
-        }
-
-        outhtml += `</li>`;
+      
+        outhtml += '<div class="post-preview">';
+        outhtml += '<a href="post.html?' + data[i].number + '">';
+        outhtml += '<h2 class="post-title">' + data[i].title +'</h2>';
+        outhtml += '<h3 class="post-subtitle">' + data[i].body.substring(100,0) +'</h3>';
+		outhtml += '</a>';
+		var ts = new Date(data[i].created_at);
+		outhtml += '<p class="post-meta">Posted on ' + ts.toDateString() + '</p>';
+        outhtml += '</div><hr>';
+        
       }
     }
-
-    outhtml += '</ul>';
-
+    
     posts.innerHTML = outhtml;
   }
 }
