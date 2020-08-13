@@ -23,7 +23,7 @@ function loadIssues(id) {
         outhtml += '<div class="post-preview">';
         outhtml += '<a href="post.html?' + data[i].number + '">';
         outhtml += '<h2 class="post-title">' + data[i].title +'</h2>';
-        outhtml += '<h3 class="post-subtitle">' + data[i].body.split('.').slice(0,1).join('.') +'</h3>';
+        outhtml += '<h3 class="post-subtitle">' + data[i].body.split('.').slice(0,2).join('.') +'.</h3>';
 		outhtml += '</a>';
 		var ts = new Date(data[i].created_at);
 		outhtml += '<p class="post-meta">Posted on ' + ts.toDateString() + '</p>';
